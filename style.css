@@ -1,0 +1,183 @@
+form {
+    display: flex;
+}
+
+input {
+    border: unset;
+    background: rgb(238, 236, 236);
+    padding: 0.5em;
+    width: 100%;
+    box-shadow: 2px 2px 7px 1px #00000066;
+
+}
+
+button {
+    cursor: pointer;
+}
+
+.btn-submit {
+    border: unset;
+    background: rgb(49, 49, 253);
+    padding: 0.5em;
+    color: white;
+    cursor: pointer;
+    align-items: right;
+    margin-left: 0.5em;
+    margin-right: 20px;
+    margin-top: 10px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 7px 1px #00000066;
+}
+
+.btn-submit:active {
+    background-color: rgb(106, 138, 243);
+}
+
+.btn-submit2 {
+    border: unset;
+    background: rgb(49, 49, 253);
+    padding: 0.5em;
+    color: white;
+    cursor: pointer;
+    align-items: right;
+    margin-left: 0.5em;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 7px 1px #00000066;
+}
+
+.btn-submit2:active {
+    background-color: rgb(106, 138, 243);
+}
+
+.autocomplete-wrapper {
+    display: flex;
+    position: relative;
+    width: 100%;
+    margin-left: 25px;
+    margin-top: 10px;
+    box-shadow: 2px 2px 7px 1px #00000066;
+}
+
+.autocomplete-list {
+    list-style: none;
+    padding: unset;
+    margin: unset;
+    position: absolute;
+    width: 100%;
+    margin-top: 40px;
+}
+
+.autocomplete-list li {
+    border: 1px solid rgb(255, 255, 255);
+    border-top: unset;
+}
+
+
+.autocomplete-list button {
+    border: none;
+    background: unset;
+    display: block;
+    width: 100%;
+    text-align: left;
+    padding: 0.5em;
+    background-color: rgb(251, 248, 248);
+}
+
+.autocomplete-list button:hover {
+    background: rgb(226, 226, 255);
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.381);
+    height: auto;
+    /* width: auto; */
+    max-width: 700px;
+    --bs-gutter-x: unset;
+    border-radius: 15px;
+    margin-bottom: 50px;
+}
+
+
+h1 {
+    color: white;
+    width: 100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+body {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url(map.jpg);
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.country_flag {
+    margin-top: 20px;
+    width: 300px;
+    height: 200px;
+    box-shadow: 2px 2px 7px 1px #00000066;
+}
+
+.currency-box {
+    margin-top: 20px;
+}
+
+.start_currency {
+    font-size: larger;
+    height: 40px;
+    width: 300px;
+    margin-right: 15px;
+    border: unset;
+    margin-left: 15px;
+}
+
+.final_currency {
+    font-size: larger;
+    height: 40px;
+    width: 300px;
+    margin-left: 15px;
+    border: unset;
+    margin-right: 15px;
+}
+
+.amount-input {
+    width: 300px;
+    margin-right: 15px;
+    margin-bottom: 10px;
+    margin-left: 15px;
+    padding: unset;
+    text-indent: 0.5em;
+    margin-top: 2px;
+}
+
+.cur-output {
+    width: 300px;
+    margin-left: 15px;
+    margin-bottom: 10px;
+    margin-right: 15px;
+    padding: unset;
+    text-indent: 0.5em;
+    margin-top: 2px;
+}
+
+.country_info {
+    margin-left: 10px;
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 2px 2px #000000;
+}
+
+.country_info_1 {
+    margin-top: 20px;
+    margin-left: 10px;
+    color: white;
+    text-shadow: 1px 2px 2px #000000;
+}
+
+#map { height: 300px; }

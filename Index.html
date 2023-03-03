@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <link rel="icon" href="https://img.icons8.com/material-outlined/24/null/currency-exchange.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+    integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI="
+    crossorigin=""/>
+     <!-- Make sure you put this AFTER Leaflet's CSS -->
+ <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+ integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM="
+ crossorigin=""></script>
+
+</head>
+
+<body>
+
+    <div class="container">
+        <div id="map"></div>
+        <form action="" autocomplete="off">
+            <div id="autocomplete-wrapper" class="autocomplete-wrapper">
+                <input id="autocomplete-input" type="text" placeholder="Country">
+            </div>
+            <button type="button" class="btn-submit">Search</button>
+        </form>
+
+        <!-- country information -->
+        <div id="flag-container"
+            class="country_info_container d-flex flex-column justify-content-center align-items-center">
+            <!-- <img id="Country-flag" class="country_flag align-items-center" alt="flag-picture"> -->
+        </div>
+
+        <div id="Country_data">
+            <h2 id="Capital" class="country_info_1"></h2>
+            <h2 id="Continent" class="country_info"></h2>
+            <h2 id="Population" class="country_info"></h2>
+            <h2 id="Country-Currency" class="country_info"></h2>
+        </div>
+
+        <!-- CURRENCY SELECTOR HTML -->
+        <div class="d-flex flex-row justify-content-center align-items-end currency-box">
+            <select class="start_currency " name="start_currency" id="start_currency_selector"></select>
+            <select class="final_currency " name="final_currency" id="final_currency_selector"></select>
+
+        </div>
+        <div class="d-flex flex-row justify-content-center">
+            <br>
+            <input class="amount-input d-flex justify-content-end" type="number" name="" id="starting_currency_value"
+                value="1">
+            <input class="cur-output d-flex justify-content-start" type="number" name="" id="final_currency_value"
+                disabled value="0">
+        </div>
+
+        <div class="d-flex flex-row justify-content-center">
+            <button type="submit" class="btn-submit2" id="convert_currency">Convert</button>
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
