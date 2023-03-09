@@ -10,7 +10,7 @@ let countryNames = [];
 //--
 
 async function getCountryData() {
-  const countryRes = await fetch("https://restcountries.com/v3.1/all");
+  const countryRes = await fetch("http://restcountries.com/v3.1/all");
   const data = await countryRes.json();
 
   countryNames = data.map((country) => {
@@ -84,7 +84,7 @@ let startingCurrencyValue = document.querySelector("#starting_currency_value")
 let finalCurrencyValue = document.querySelector("#final_currency_value")
 
 // Currency list creation
-const currencyBaseURL = "https://api.exchangerate.host/"
+const currencyBaseURL = "http://api.exchangerate.host/"
 const currencyList = () => {
   fetch(`${currencyBaseURL}symbols`)
     .then(response => response.json())
@@ -130,7 +130,7 @@ if (!countryName){
   // let countryName = inputEl.value;
   console.log(countryName);
 
-  let finalURL = `https://restcountries.com/v3.1/name/${countryName}?fullText=true`;
+  let finalURL = `http://restcountries.com/v3.1/name/${countryName}?fullText=true`;
 
   fetch(finalURL)
     .then((response) => response.json())
@@ -170,7 +170,7 @@ var map = L.map('map').setView([51.505, -0.09], 3);
 
 sendButton.addEventListener("click", ()=> countryInfo(countryName));
 
-L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+L.tileLayer('http://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     maxZoom: 19,
     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
 }).addTo(map);
@@ -179,7 +179,7 @@ var popup = L.popup()
 
 function onMapClick(e) {
   console.log("hi")
-  fetch(`https://api.geonames.org/countryCodeJSON?&lat=${e.latlng.lat}&lng=${e.latlng.lng}&username=stephendoty826`)
+  fetch(`http://api.geonames.org/countryCodeJSON?&lat=${e.latlng.lat}&lng=${e.latlng.lng}&username=stephendoty826`)
   .then(response => response.json())
   .then(data=>{
       // console.log(data.countryName)
