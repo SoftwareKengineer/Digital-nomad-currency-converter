@@ -178,6 +178,7 @@ L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
 var popup = L.popup()
 
 function onMapClick(e) {
+  console.log("hi")
   fetch(`https://api.geonames.org/countryCodeJSON?&lat=${e.latlng.lat}&lng=${e.latlng.lng}&username=stephendoty826`)
   .then(response => response.json())
   .then(data=>{
